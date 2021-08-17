@@ -29,6 +29,20 @@ class api_parameters :
             print("Impossible de trouver le nom de la table AirTable")
             self.airtable_table_name = ""
 
+        # Nom de la colonne Airtable sur laquelle on souhaite filtrer
+        try :
+            self.airtable_filtered_colonne = json_settings["AirTable colonne a filtrer"]
+        except KeyError :
+            print("Impossible de trouver le nom de la colonne a filtrer dans la table AirTable")
+            self.airtable_filtered_colonne = ""
+
+        # Valeur de la colonne Airtable sur laquelle on souhaite filtrer
+        try :
+            self.airtable_filtered_value = json_settings["AirTable valeur a filtrer"]
+        except KeyError :
+            print("Impossible de trouver la valeur de la colonne a filtrer dans la table AirTable")
+            self.airtable_filtered_value = ""
+
 
     # Recupere les parametres graphiques du fichier de config sous la forme d'un dictionnaire
     def get_paramfile(self, config_file = "/config/airtable_paramz.json") :

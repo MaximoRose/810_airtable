@@ -36,6 +36,9 @@ class atListe:
     def filter_at_pages(self, colonne_name = "", colonne_value = "") : 
         # Initialise la liste qui sera retournee
         pages = []
+        if colonne_name == "" or colonne_value == "" :
+            pages = self.at_records
+            return pages
 
         for page in self.at_records :
             # lorsqu'un champ est laisse vide dans la liste airtable, le dictionnaire associe a la ligne, ne contient pas la cle concernee
