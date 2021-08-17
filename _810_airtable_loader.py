@@ -47,7 +47,7 @@ class atListe:
             try :
                 type_colonne = type(page['fields'][colonne_name])
             except KeyError :
-                print("La colonne demandee n'existe pas pour l'element "+ page['fields']['Name'])
+                # print("La colonne demandee n'existe pas pour l'element "+ page['fields']['Name'])
                 continue
 
             # Si string, chaine de caracteres
