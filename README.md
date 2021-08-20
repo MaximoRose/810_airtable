@@ -22,4 +22,4 @@ On peut utiliser le fichier json pour definir la colonne sur laquelle on souhait
 
 Le fichier .ipynb sert d'exemple d'utilisation.
 
-On se sert de ces modules pour charger les éléments à requêter pour nos analyses YouTube. C'est par exemple ainsi qu'on avait défini la liste de chaîne YouTube que nous souhaitions requêter pour [notre analyse de la performance des chaînes YouTube des institutions culturelles françaises](https://github.com/MaximoRose/OS_YouTube_Consultant).
+On se sert de ces modules pour charger les éléments à requêter pour nos analyses YouTube. C'est par exemple ainsi qu'on avait défini la liste de chaîne YouTube que nous souhaitions requêter pour [notre analyse de la performance des chaînes YouTube des institutions culturelles françaises](https://github.com/MaximoRose/OS_YouTube_Consultant) : un code s'appuyait sur une liste de chaîne définit dans AirTable qu'on allait ensuite requêter par un script python qui permettait de générer des fichiers .json issus des données renvoyées par les API YouTube. Un fichier Jupyter NoteBook servait ensuite à l'analyse de ces données.
