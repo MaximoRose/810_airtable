@@ -3,6 +3,8 @@ Methodes pour requeter et filtrer des listes AirTable
 
 - On met les parametres de connexion a airtable dans un fichier config en .json.
 
+
+```
 {
     "AirTable API key" : ""  , 
     "AirTable base ID" : "", 
@@ -10,6 +12,8 @@ Methodes pour requeter et filtrer des listes AirTable
     "AirTable colonne a filtrer" : "",
     "AirTable valeur a filtrer" : ""
 }
+
+```
 
 - le module a_at_loader_810.py permet de recuperer l'ensemble des donnees de la liste. Sa methode, filter_at_pages(self, colonne_name = "", colonne_value = ""), permet de filtrer sur une colonne
 
