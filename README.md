@@ -15,7 +15,7 @@ Methodes pour requeter et filtrer des listes AirTable
 
 ```
 
-- le module a_at_loader_810.py permet de recuperer l'ensemble des donnees de la liste. Sa methode, filter_at_pages(self, colonne_name = "", colonne_value = ""), permet de filtrer sur une colonne
+- le module a_at_loader_810.py permet de recuperer l'ensemble des donnees de la liste. Sa methode _filter_at_pages()_ permet de filtrer sur une colonne.
 
 On peut utiliser le fichier json pour definir la colonne sur laquelle on souhaite filtrer et la valeur associée, ou bien, on peut mettre ces elements en dur dans le code.
 
